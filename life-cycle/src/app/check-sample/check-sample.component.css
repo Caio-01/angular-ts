@@ -1,0 +1,49 @@
+.englobe{
+    background-color: #afb4ac;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px 30px 10px 30px;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 10px;
+    position: relative;
+    
+}
+
+.container h2{
+    margin-top: -7px;
+    font-size: 2.8em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button{
+    position: absolute;
+    top:15%;
+    background-color:#000;
+    color: #fff;
+    border:none;
+    border-radius:10px;
+    font-size: 1.2em; 
+    padding: 8px;
+   
+}
+
+.btnLeft{
+    margin-right: 3.8em ;
+}
+.btnRight{
+    margin-left: 3.8em;
+}
