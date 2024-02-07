@@ -1,0 +1,21 @@
+<div>
+  <ul>      
+    <!-- routerLink utilziado para a pagina n precisar da recharge no angular-->
+    <!-- routerLinkActive utilziado para adicionar uma classe para o link-->
+    <!-- routerLinkActiveOptions utilizado para ativar a classe quando o resultado for exato-->
+    <li>
+        <a [routerLink]="['/']"
+           [routerLinkActive]="['activated']"
+           [routerLinkActiveOptions]="{exact: true}"
+            >HOME
+        </a>
+    </li>
+    <li>
+        <a [routerLink]="['/portifolio']"
+           [routerLinkActive]="['activated']"
+           >Portifolio
+        </a>
+    </li>
+    
+  </ul>
+</div>
