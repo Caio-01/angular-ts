@@ -1,0 +1,34 @@
+
+<!-- Esse NG serve para manipular o estilo utilizanddo TS Dinamicamente com uma propriedade -->
+<p [ngClass]="estilo">comp-atributos works!</p>
+<button (click)="trocar()">Clique aqui</button>
+
+<h1 [ngStyle]="{
+    'background':corFundo
+}">
+    Cruso Angular
+</h1>
+
+<!-- NgModel -->
+<h1>Lista de Compras</h1>
+<h3>Adicione um item</h3>
+
+<!-- Fazendo um metodo de adicionar uma string em uma lista -->
+<input type="text" [(ngModel)]="item">
+<button (click)="adicionarLista()">ADICIONAR</button>
+<p> {{ item }}</p>
+
+<ul>
+    <li *ngFor="let elemento of lista">{{ elemento }}</li>
+</ul>
+
+<hr>
+
+<!-- Esse NG template serve como uma tag HTML (componente)/ OBS: Ele vem desabilitado, precisamos habilitar utiliando o ngIf: true -->
+<ng-template [ngIf]="isEnableBlock">
+    <a href="#">Finalizar Compra</a>
+</ng-template>
+
+<!-- Esse componente está vindo do app.component -->
+<ng-content select=""></ng-content>
+<hr>

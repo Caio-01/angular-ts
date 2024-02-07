@@ -1,0 +1,35 @@
+<div class="container">
+  <header>
+    <h1>Bem vindo ao Mercado Virtual</h1>
+    <h2>Adicione um Item na lista</h2>
+  </header>
+
+  <!-- NgModel e  metodo de adicionar uma string na lista-->
+  <div class="main">
+    <input type="text" [(ngModel)]="item" placeholder="Digite aqui" />
+    <button (click)="adicionarLista()">ADICIONAR</button>
+
+    <p>{{ item }}</p>
+    <!--Aqui vai ter a previa do item digitado -->
+  </div>
+
+  <div class="resultado">
+    <!-- NgFor para percorrer a lista e criar elementos repetidos-->
+    <ul>
+      <li *ngFor="let elemento of lista">{{ elemento }}</li>
+    </ul>
+
+    <button (click)="removerItem()">REMOVER</button>
+
+    <!-- NgIf serve para como um metodo condicional (true or false), para mostrar um item no html -->
+    <ng-template [ngIf]="isEnableBlock">
+      <a href="#">Finaliza Compra</a>
+    </ng-template>
+
+  </div>
+  
+  <footer class="rodape">
+    <a href="https://github.com/Caio-01">by CaioCosta</a>
+ </footer>   
+  
+</div>

@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Single+Day&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-direction: column;
+  border: 1px solid #ffffff;
+  box-shadow: 1px 1px 7px rgba(255, 255, 255, 0.637);
+  border-radius: 15px;
+  padding: 10px;
+  max-width: 700px;
+  min-height: 90vh;
+  margin: auto;
+  background: linear-gradient(45deg, #ffd89b, #19547b);
+}
+
+header {
+  font-family: "Ubuntu", sans-serif;
+  color: #fff;
+  text-shadow: -3px 1px 6px rgba(0, 0, 0, 0.801);
+}
+
+header h1 {
+  font-size: 2.4em;
+}
+
+header h2 {
+  font-size: 1.8em;
+}
+
+.main {
+  display: block;
+  place-items: center;
+  position: relative;
+  height: 115px;
+}
+.main input {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 12px 12px;
+  border: none;
+  font-size: 1em;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  transition: 0.7s ease;
+  outline: none;
+}
+
+.main input:focus {
+  border: 2px solid #807d7d;
+}
+
+button {
+  cursor: pointer;
+  padding: 12px 12px;
+  margin-left: 10px;
+  border-radius: 1em;
+  border: none;
+  color: #fff;
+  background-color: #4f4f59;
+  transition: 0.1s;
+}
+
+.main button {
+  position: absolute;
+  top: 5px;
+  background-color: #252533;
+}
+
+button:hover,
+.resultado > a:hover {
+  color: #ebebeb;
+  transform: translateY(-0.8px);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.322);
+}
+
+button:active {
+  transform: translateY(0px);
+}
+
+.main p {
+  color: #fff;
+  font-size: 1.2em;
+  font-family: "Single Day", cursive;
+}
+
+.resultado {
+  min-height: 400px;
+}
+
+.resultado ul {
+  color: #fff;
+  text-shadow: -2px 1px 6px rgba(0, 0, 0, 0.801);
+  font-family: "Single Day", cursive;
+  list-style: none;
+  font-size: 2em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 2em;
+  margin-left: -1em;
+  margin-bottom: 2em;
+}
+
+.resultado > a {
+  margin-left: 2em;
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.2em;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 1em;
+  font-weight: 600;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.712);
+  transition: 0.1s;
+}
+
+.rodape > p {
+  
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.rodape a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-style: italic;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.rodape a:hover{
+  color: #3a3a3a;
+  transition: 0.4s ease;
+}

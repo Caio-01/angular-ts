@@ -1,0 +1,49 @@
+<h1>My Products</h1>
+<p>card works!</p>
+<button>COLE MERMAO</button>
+<ul>
+    <!-- esse NG serve para criar laços de repetições -->
+    <li *ngFor="let p of produtos; let i = index;"
+        (click)="remova(i)"
+    >
+       {{ i }} - {{ p }}
+    </li>
+
+    <!-- esse metodo adicionar um elemento em 'proutos'-->
+    <button (click)="adicionar()">Add</button>
+
+    <!-- esse metodo vai remover o ultimo elemento em 'produtos' -->
+    <!-- <button (click)="remover()">Remove</button> -->
+</ul>
+
+<!-- Esse NG cria bloco conficionais em HTML-->
+<div [ngSwitch]="menuType">
+    <div *ngSwitchCase="'user'">
+        <ul>
+            <li>Editar perfil</li>
+            <li>Adicionar Cartão</li>
+        </ul>
+    </div>
+    <div *ngSwitchCase="'admin'">
+        <ul>
+            <li>Editar perfil</li>
+            <li>Adicionar Cartão</li>
+            <li>Gerenciar User</li>
+        </ul>
+    </div>
+    <div *ngSwitchCase="'superuser'">
+        <ul>
+            <li>Editar perfil</li>
+            <li>Adicionar Cartão</li>
+            <li>Gerenciar User</li>
+            <li>Gerenciar Admins</li>
+        </ul>
+    </div>
+
+    <!--Utilizado quando não encontra nenhum valor -->
+    <div *ngSwitchDefault>
+        <ul>
+            <li>Editar perfil</li>
+        </ul>
+    </div>
+</div>
